@@ -1,0 +1,21 @@
+{
+  "name": "aleksandar-subbly-plugins",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Subbly marketplace plugins. Tooling only: no plugin ships from this package.",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:strict": "subbly-plugin-lint --strict"
+  },
+  "devDependencies": {
+    "@eslint/json": "^2.0.1",
+    "@eslint/markdown": "^8.0.3",
+    "@subbly/plugin-lint": "^0.0.11",
+    "eslint": "^10.8.1"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.20.0"
+}

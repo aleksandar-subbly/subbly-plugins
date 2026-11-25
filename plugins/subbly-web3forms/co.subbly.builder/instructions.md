@@ -1,0 +1,1 @@
+Web3Forms is installed. Every website form that sends visitor submissions (contact, quote, booking, inquiry, newsletter, custom) goes through Web3Forms with the shop's configured access key, built per the `web3forms` skill. The key is the `PLUGIN_SUBBLY_WEB3FORMS__WEB3FORMS_ACCESS_KEY` environment variable; never ask the user for it in chat.

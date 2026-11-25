@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "subbly-web3forms",
+  "description": "Connect your website forms to Web3Forms and receive customer inquiries directly in your email inbox. Create contact forms, quote requests and other custom forms using Subbly Builder.",
+  "author": {
+    "name": "Subbly",
+    "url": "https://www.subbly.co"
+  },
+  "homepage": "https://web3forms.com/",
+  "keywords": ["forms", "contact form", "web3forms", "email", "lead capture"],
+  "extensions": {
+    "co.subbly.builder": {
+      "displayName": "Web3Forms",
+      "setup": true,
+      "fields": [
+        {
+          "key": "WEB3FORMS_ACCESS_KEY",
+          "label": "Form Access Key",
+          "description": "From web3forms.com: create a free form, confirm the verification email, then copy the Access Key. Never enter your Web3Forms password here.",
+          "type": "text",
+          "required": true,
+          "secret": true,
+          "pattern": "\\s*[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}\\s*"
+        }
+      ]
+    }
+  }
+}
